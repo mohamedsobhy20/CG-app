@@ -1,0 +1,54 @@
+doctype
+html
+    body
+        div(class='container' ng-app='')
+            header
+                h1 Hamza contact gallery
+
+            //form to add new contacts
+            form
+                div(class="form-row")
+                    div(class="form-sector")
+                        label(for="name" class="col-form-label") name
+                        input(type="text" class="form-control add-contact-input" id="name" placeholder="Name" required=)
+                    div(class="form-sector")
+                        label(for="phone" class="col-form-label") phone
+                        input(type="number" class="form-control add-contact-input" id="phone" placeholder="phone number" required)
+                    div(class="form-sector")
+                        label(for="email" class="col-form-label") e-mail
+                        input(type="email" class="form-control add-contact-input" id="email" placeholder="e-mail" required)
+
+                    input(type="submit" class="btn btn-primary add-contact-btn" value='add contact')
+
+            //contacts table
+            table(class="table table-striped table-bordered contacts-table")
+                thead
+                    tr
+                        th first Name
+                        th phone Number
+                        th e-mail Address
+                        th actions
+                tbody
+                    tr
+                        td(class='contact-name') john doe
+                        td {{ 5+5 }}
+                        td john@mail.com
+                        td
+                            button(class="btn btn-info") edit
+                            button(class="btn btn-danger") delete
+                    tr
+                        td(class='contact-name') mohamed sobhy
+                        td 0112323232
+                        td john2@mail.com
+                        td
+                            button(class="btn btn-info") edit
+                            button(class="btn btn-danger") delete
+                    tr
+                        td(class='contact-name') john3 doe3
+                        td 0112323232
+                        td john3@mail.com
+                        td
+                            button(class="btn btn-info") edit
+                            button(class="btn btn-danger") delete
+
+    footer
